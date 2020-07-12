@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use(express.static('compiler/build'))
-app.listen(9000, function(){
+app.listen(process.env.PORT||9000, function(){
     console.log("server started at port 9000")
 })
 
