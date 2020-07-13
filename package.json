@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm i && npm run build"
+    "heroku-postbuild": "cd compiler && npm i && npm run build"
   },
   "author": "bharad",
   "license": "ISC",
