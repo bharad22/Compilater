@@ -96,7 +96,7 @@ change3(event){
     })
     if(this.state.script !== ''){
       this.setState({loading:true})
-      axios.post("http://localhost:9000/",this.state)
+      axios.post("https://compilater.herokuapp.com/",this.state)
       .then(res=>this.setState({
         output:res.data.output,
         statusCode :res.data.statusCode,
